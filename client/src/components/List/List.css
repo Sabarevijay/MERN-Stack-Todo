@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.t-container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #beb0a7, #eb916e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+
+    position: relative; /* For relative positioning of the logout button */
+}
+/* .btn-danger{
+    border: none;
+    outline:none;
+    background: #c94334;
+    color: #fff;
+    padding: 16px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+} */
+ .btn-danger{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-right: 25px;
+    width:100px;
+    margin-top: 15px;
+    background: #c94334;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: black solid 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ .logout-btn {
+    position: absolute; /* Position it relative to the entire page */
+    top: 15px; /* Distance from the top of the page */
+    right: 15px; /* Distance from the right of the page */
+    z-index: 10; /* Ensure it appears above other elements */
+ }
+
+.panel{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    margin-left: 25px;
+    width:100px;
+    background: #c94334;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: black solid 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.container button:hover {
+    background: #80332c; /* Slightly darker color for highlight */
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #ffffff;
+    margin: 10px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+    border: black solid 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.todo-app h1{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;  
+    justify-content: center; 
+    text-align: center;
+}
+.todo-app h1 img{
+    width: 50px;
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+.todo-app h2{
+     color: #002765;
+     display: flex;
+     align-items: center;
+     margin-bottom: 20px;     
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    /* border: black solid 1px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+
+}
+.todo-app button{
+    border: none;
+    outline: none;
+    background: #ff5945;
+    color: #fff;
+    padding: 16px 5px;
+    width: 30%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px; 
+    border: black solid 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  
+  ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('../../assets/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+  }
+  
+  ul li.checked::before {
+    background-image: url('../../assets/checked.png');
+  }
+  
+  ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+  }
+  
+
+ ul li span:hover{
+    background: #edeef0;
+ }
+
+
