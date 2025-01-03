@@ -214,8 +214,8 @@ app.post("/login", async (req, res) => {
 // });
   
 
-
-app.listen(5000,()=>{
+const PORT = process.env.PORT || 5001;
+app.listen(PORT,()=>{
     console.log("Sever has started on the port 5000");
     
 })
